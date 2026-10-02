@@ -56,24 +56,15 @@ Open `http://localhost:3000` in your web browser.
 
 ---
 
-## 🌐 Deploying to GitHub & Live Hosting
+## 🌐 Repository & Live Deployment Links
 
-### 1. Push to GitHub
-```bash
-git add .
-git commit -m "feat: complete IEEE InnovateX 2026 event website"
-git branch -M main
-git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO_NAME>.git
-git push -u origin main
+- **GitHub Repository URL**: [https://github.com/twinkalgolhani05-hub/ieee-innovatex-2026](https://github.com/twinkalgolhani05-hub/ieee-innovatex-2026)
+- **Live Site URL (GitHub Pages)**: [https://twinkalgolhani05-hub.github.io/ieee-innovatex-2026/](https://twinkalgolhani05-hub.github.io/ieee-innovatex-2026/)
+
+### Submission Format:
+```text
+Domain: 03 TECHNICAL
+Task: Task 1: Event Website
+GitHub Repository URL: https://github.com/twinkalgolhani05-hub/ieee-innovatex-2026
+Live Site URL: https://twinkalgolhani05-hub.github.io/ieee-innovatex-2026/
 ```
-
-### 2. Live Deployment
-
-- **GitHub Pages**:
-  1. In your GitHub repository, navigate to **Settings** > **Pages**.
-  2. Under **Branch**, select `main` and root `/` folder, then click **Save**.
-  3. Your site will be live at `https://<YOUR_USERNAME>.github.io/<YOUR_REPO_NAME>/`.
-
-- **Vercel**:
-  1. Visit [vercel.com](https://vercel.com) and import your GitHub repository.
-  2. Click **Deploy**. Vercel will instantly publish the single-page website.
