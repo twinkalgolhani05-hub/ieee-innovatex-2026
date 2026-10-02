@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IEEE InnovateX 2026 | IEEE IAS & RAS SBC MITS Gwalior</title>
+  <meta name="description" content="Official website for IEEE InnovateX 2026 organized by IEEE Industry Applications Society & IEEE Robotics and Automation Society, MITS Gwalior." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/ieee.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Background Glow & Grid Canvas -->
+  <div class="bg-circuit-overlay"></div>
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-cluster" aria-label="IEEE InnovateX 2026 Home">
+        <div class="logos-group">
+          <!-- IEEE Logo -->
+          <img src="assets/images/ieee.jpg" alt="IEEE Logo" class="brand-logo logo-ieee" 
+               onerror="this.src='https://plain-apac-prod-public.komododecks.com/202609/17/EtJRryiEBiWtEZ0P6uI5/image.jpg'" />
+          <span class="logo-divider"></span>
+          <!-- IAS Logo -->
+          <img src="assets/images/ias.png" alt="IEEE IAS Logo" class="brand-logo logo-ias" 
+               onerror="this.src='https://plain-apac-prod-public.komododecks.com/202609/17/fZX7Oap2QzKzLWLJFr96/image.png'" />
+          <!-- RAS Logo -->
+          <img src="assets/images/ras.jpg" alt="IEEE RAS Logo" class="brand-logo logo-ras" 
+               onerror="this.src='https://plain-apac-prod-public.komododecks.com/202609/17/HMDQxvrIYT1iYhYlSRr5/image.jpg'" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">InnovateX '26</span>
+          <span class="brand-sub">MITS Gwalior</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#speakers" class="nav-link">Keynote Speakers</a>
+        <a href="#highlights" class="nav-link">Highlights</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav CTA -->
+      <div class="nav-action">
+        <button class="btn btn-primary nav-register-btn" onclick="openRegisterModal()">
+          <span>Register Now</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <div class="mobile-drawer-inner">
+        <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
+        <a href="#schedule" class="mobile-nav-link" onclick="closeMobileMenu()">Schedule</a>
+        <a href="#speakers" class="mobile-nav-link" onclick="closeMobileMenu()">Keynote Speakers</a>
+        <a href="#highlights" class="mobile-nav-link" onclick="closeMobileMenu()">Highlights</a>
+        <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+        <button class="btn btn-primary w-100" onclick="closeMobileMenu(); openRegisterModal();">
+          <span>Register Now</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-content">
+      <!-- Tag / Society Badges -->
+      <div class="hero-badge-wrapper">
+        <div class="badge-pill">
+          <span class="pulsing-dot"></span>
+          <span>IEEE IAS & RAS Student Branch Chapters • MITS Gwalior</span>
+        </div>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="hero-title">
+        IEEE <span class="gradient-text">InnovateX</span> 2026
+      </h1>
+      <p class="hero-subtitle">
+        The Premier National Flagship Symposium on Autonomous Robotics, Industrial Automation, & Sustainable Intelligence.
+      </p>
+
+      <!-- Event Details Bar -->
+      <div class="event-meta-bar">
+        <div class="meta-item">
+          <i class="fa-regular fa-calendar-days"></i>
+          <div>
+            <span class="meta-label">Date</span>
+            <span class="meta-val">Oct 24–25, 2026</span>
+          </div>
+        </div>
+        <div class="meta-separator"></div>
+        <div class="meta-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <span class="meta-label">Venue</span>
+            <span class="meta-val">Colloquium Hall, MITS Gwalior</span>
+          </div>
+        </div>
+        <div class="meta-separator"></div>
+        <div class="meta-item">
+          <i class="fa-solid fa-users"></i>
+          <div>
+            <span class="meta-label">Mode & Seats</span>
+            <span class="meta-val">Offline • 250 Limited Slots</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Countdown Timer -->
+      <div class="countdown-container">
+        <div class="countdown-title">
+          <i class="fa-solid fa-stopwatch"></i> Event Commences In:
+        </div>
+        <div class="countdown-grid" id="countdownGrid">
+          <div class="countdown-box">
+            <span class="count-number" id="days">00</span>
+            <span class="count-label">Days</span>
+          </div>
+          <div class="countdown-colon">:</div>
+          <div class="countdown-box">
+            <span class="count-number" id="hours">00</span>
+            <span class="count-label">Hours</span>
+          </div>
+          <div class="countdown-colon">:</div>
+          <div class="countdown-box">
+            <span class="count-number" id="minutes">00</span>
+            <span class="count-label">Minutes</span>
+          </div>
+          <div class="countdown-colon">:</div>
+          <div class="countdown-box">
+            <span class="count-number" id="seconds">00</span>
+            <span class="count-label">Seconds</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Call-To-Actions -->
+      <div class="hero-actions">
+        <button class="btn btn-primary btn-lg" onclick="openRegisterModal()" id="heroRegisterBtn">
+          <i class="fa-solid fa-bolt"></i>
+          <span>Register Now</span>
+        </button>
+        <a href="#schedule" class="btn btn-secondary btn-lg">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Explore Schedule</span>
+        </a>
+      </div>
+
+      <!-- Quick Metrics Counters -->
+      <div class="hero-stats-grid">
+        <div class="stat-card">
+          <div class="stat-num">500+</div>
+          <div class="stat-desc">Tech Enthusiasts</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2</div>
+          <div class="stat-desc">Elite Keynotes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">₹50,000+</div>
+          <div class="stat-desc">Awards & Goodies</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">IEEE</div>
+          <div class="stat-desc">Verified Certificates</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Synergy of IAS & RAS</span>
+        <h2 class="section-title">About InnovateX 2026</h2>
+        <div class="header-line"></div>
+        <p class="section-subtitle">
+          An immersive conclave uniting the computational power of the <strong>IEEE Robotics and Automation Society (RAS)</strong> with the industrial rigor of the <strong>IEEE Industry Applications Society (IAS)</strong>.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-panel">
+          <div class="card-icon icon-blue">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <h3>Robotics & Automation Society (RAS)</h3>
+          <p>
+            Cultivating innovation in cybernetic autonomy, drone systems, AI perception, and automated algorithmic problem solving for modern physical computing.
+          </p>
+          <ul class="card-list">
+            <li><i class="fa-solid fa-check"></i> Autonomous System Design</li>
+            <li><i class="fa-solid fa-check"></i> Computer Vision & Kinematics</li>
+          </ul>
+        </div>
+
+        <div class="about-card glass-panel">
+          <div class="card-icon icon-green">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3>Industry Applications Society (IAS)</h3>
+          <p>
+            Bridging theoretical academia with industrial deployment: IoT architectures, renewable smart microgrids, motor drives, and mission-critical hardware.
+          </p>
+          <ul class="card-list">
+            <li><i class="fa-solid fa-check"></i> Industrial IoT & Cloud Integration</li>
+            <li><i class="fa-solid fa-check"></i> Sustainable Power & Automation</li>
+          </ul>
+        </div>
+
+        <div class="about-card glass-panel">
+          <div class="card-icon icon-purple">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3>MITS Gwalior Heritage</h3>
+          <p>
+            Hosted at Madhav Institute of Technology & Science, Gwalior — empowering student innovators through premier technical societies and research initiatives.
+          </p>
+          <ul class="card-list">
+            <li><i class="fa-solid fa-check"></i> Hands-on Lab Collaborations</li>
+            <li><i class="fa-solid fa-check"></i> Recognized IEEE Chapter Impact</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT SCHEDULE SECTION (3-4 Items Required) -->
+  <section class="section schedule-section" id="schedule">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Timeline of Excellence</span>
+        <h2 class="section-title">Event Schedule</h2>
+        <div class="header-line"></div>
+        <p class="section-subtitle">
+          Carefully curated sessions designed to take you from foundational breakthroughs to industry-level deployment.
+        </p>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Schedule Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-microphone-lines"></i>
+          </div>
+          <div class="timeline-content glass-panel">
+            <div class="timeline-meta">
+              <span class="time-badge"><i class="fa-regular fa-clock"></i> 09:30 AM – 11:00 AM</span>
+              <span class="session-category cat-keynote">Inaugural Keynote</span>
+            </div>
+            <h3 class="session-title">Grand Opening & Keynote 1: Autonomous Robotics in Industry 4.0</h3>
+            <p class="session-desc">
+              Opening address by IEEE IAS & RAS leaders followed by an in-depth keynote addressing the future of cognitive robotics, swarm intelligence, and autonomous inspection systems in next-gen manufacturing.
+            </p>
+            <div class="session-footer">
+              <span class="speaker-tag"><i class="fa-solid fa-user-tie"></i> Dr. Aris Thorne (IEEE Fellow)</span>
+              <span class="venue-tag"><i class="fa-solid fa-location-dot"></i> Main Colloquium Hall</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schedule Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div class="timeline-content glass-panel">
+            <div class="timeline-meta">
+              <span class="time-badge"><i class="fa-regular fa-clock"></i> 11:30 AM – 01:30 PM</span>
+              <span class="session-category cat-workshop">Hands-On Sprint</span>
+            </div>
+            <h3 class="session-title">RoboCode IoT Sprint: Microcontroller Interfacing & Telemetry</h3>
+            <p class="session-desc">
+              Interactive technical sprint where participants assemble and program connected IoT hardware sensors, establishing low-latency MQTT data channels and real-time dashboard visualization.
+            </p>
+            <div class="session-footer">
+              <span class="speaker-tag"><i class="fa-solid fa-chalkboard-user"></i> Technical Mentorship Team</span>
+              <span class="venue-tag"><i class="fa-solid fa-location-dot"></i> Advanced Computing Lab 2</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schedule Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="timeline-content glass-panel">
+            <div class="timeline-meta">
+              <span class="time-badge"><i class="fa-regular fa-clock"></i> 02:30 PM – 04:00 PM</span>
+              <span class="session-category cat-keynote">Industrial Keynote</span>
+            </div>
+            <h3 class="session-title">Keynote 2: Sustainable Smart Grids & High-Efficiency Drives</h3>
+            <p class="session-desc">
+              Focusing on the transition toward resilient, zero-emission industrial power architecture, grid modernization, edge automation, and intelligent power electronics in smart factories.
+            </p>
+            <div class="session-footer">
+              <span class="speaker-tag"><i class="fa-solid fa-user-tie"></i> Dr. Elena Vance (IEEE IAS Senior Member)</span>
+              <span class="venue-tag"><i class="fa-solid fa-location-dot"></i> Main Colloquium Hall</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schedule Item 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <div class="timeline-content glass-panel">
+            <div class="timeline-meta">
+              <span class="time-badge"><i class="fa-regular fa-clock"></i> 04:30 PM – 06:00 PM</span>
+              <span class="session-category cat-valedictory">Grand Finale</span>
+            </div>
+            <h3 class="session-title">Innovators Pitch Expo, Awards & Valedictory Ceremony</h3>
+            <p class="session-desc">
+              Finalist project demonstrations judged by esteemed faculty and industry guests, followed by certificate distributions, prize announcements (₹50,000+ pool), and closing remarks.
+            </p>
+            <div class="session-footer">
+              <span class="speaker-tag"><i class="fa-solid fa-award"></i> Executive IEEE Panel & Guest Evaluators</span>
+              <span class="venue-tag"><i class="fa-solid fa-location-dot"></i> Main Auditorium</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEYNOTE SPEAKERS SECTION (2 Speaker Cards Required) -->
+  <section class="section speakers-section" id="speakers">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">World-Class Visionaries</span>
+        <h2 class="section-title">Keynote Speakers</h2>
+        <div class="header-line"></div>
+        <p class="section-subtitle">
+          Learn directly from global authorities shaping the cutting-edge intersection of robotics and industrial applications.
+        </p>
+      </div>
+
+      <div class="speakers-grid">
+        <!-- Keynote Speaker 1 -->
+        <div class="speaker-card glass-panel">
+          <div class="speaker-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
+                 alt="Dr. Aris Thorne" class="speaker-photo" 
+                 onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80'" />
+            <div class="speaker-overlay">
+              <span class="badge-role">Keynote Speaker 1</span>
+            </div>
+          </div>
+          <div class="speaker-body">
+            <div class="speaker-topic-badge">
+              <i class="fa-solid fa-brain"></i> Autonomous Systems & Swarm AI
+            </div>
+            <h3 class="speaker-name">Dr. Aris Thorne</h3>
+            <span class="speaker-designation">Principal Robotics Architect & IEEE Fellow</span>
+            <p class="speaker-bio">
+              With 18+ years of groundbreaking research in multi-agent swarm robotics and adaptive cyber-physical control, Dr. Thorne leads advanced robotics initiatives bridging machine perception with real-world mechanical autonomy.
+            </p>
+            <div class="speaker-affiliations">
+              <span class="affiliation-item"><i class="fa-solid fa-building-columns"></i> Center for Robotics Excellence</span>
+              <span class="affiliation-item"><i class="fa-solid fa-newspaper"></i> 40+ IEEE Transactions Publications</span>
+            </div>
+            <div class="speaker-socials">
+              <a href="#" class="social-btn" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn" aria-label="IEEE Xplore"><i class="fa-solid fa-book-open"></i></a>
+              <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keynote Speaker 2 -->
+        <div class="speaker-card glass-panel">
+          <div class="speaker-image-wrapper">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" 
+                 alt="Dr. Elena Vance" class="speaker-photo"
+                 onerror="this.src='https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80'" />
+            <div class="speaker-overlay">
+              <span class="badge-role">Keynote Speaker 2</span>
+            </div>
+          </div>
+          <div class="speaker-body">
+            <div class="speaker-topic-badge badge-green">
+              <i class="fa-solid fa-bolt-lightning"></i> Smart Grids & Industrial Power
+            </div>
+            <h3 class="speaker-name">Dr. Elena Vance</h3>
+            <span class="speaker-designation">VP of Sustainable Automation • IEEE IAS Senior Member</span>
+            <p class="speaker-bio">
+              Dr. Vance specializes in high-reliability industrial power electronics and decarbonized smart manufacturing. Her team pioneers algorithmic energy balancing in zero-downtime mission-critical industrial plants.
+            </p>
+            <div class="speaker-affiliations">
+              <span class="affiliation-item"><i class="fa-solid fa-industry"></i> Industrial Energy Consortium</span>
+              <span class="affiliation-item"><i class="fa-solid fa-award"></i> IEEE IAS Distinguished Lecturer</span>
+            </div>
+            <div class="speaker-socials">
+              <a href="#" class="social-btn" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-btn" aria-label="IEEE Xplore"><i class="fa-solid fa-book-open"></i></a>
+              <a href="#" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS & PERKS -->
+  <section class="section highlights-section" id="highlights">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Why You Cannot Miss It</span>
+        <h2 class="section-title">Symposium Highlights</h2>
+        <div class="header-line"></div>
+        <p class="section-subtitle">
+          Unrivaled learning, industry networking, and recognition for your engineering credentials.
+        </p>
+      </div>
+
+      <div class="highlights-grid">
+        <div class="highlight-item glass-panel">
+          <div class="hl-icon"><i class="fa-solid fa-certificate"></i></div>
+          <h4>Official IEEE Certification</h4>
+          <p>All registered attendees receive dual IEEE IAS & IEEE RAS accredited participation credentials.</p>
+        </div>
+        <div class="highlight-item glass-panel">
+          <div class="hl-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h4>Industry Mentorship</h4>
+          <p>One-on-one networking tables with IEEE Senior Members, domain researchers, and industry leaders.</p>
+        </div>
+        <div class="highlight-item glass-panel">
+          <div class="hl-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>Kit & Hardware Access</h4>
+          <p>Hands-on kit allocation for verified sprint teams, including IoT nodes, sensors, and dev kits.</p>
+        </div>
+        <div class="highlight-item glass-panel">
+          <div class="hl-icon"><i class="fa-solid fa-sack-dollar"></i></div>
+          <h4>Cash Prizes & Internship Calls</h4>
+          <p>Top projects win cash grants from a ₹50,000+ pool and direct interview recommendations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALL TO ACTION BANNER -->
+  <section class="section cta-banner-section">
+    <div class="container">
+      <div class="cta-banner glass-panel">
+        <div class="cta-text">
+          <span class="cta-kicker">Limited Offline Capacity</span>
+          <h2>Secure Your Seat at IEEE InnovateX 2026</h2>
+          <p>Join future robotics innovators and electrical engineering visionaries at MITS Gwalior.</p>
+        </div>
+        <div class="cta-actions">
+          <button class="btn btn-primary btn-lg" onclick="openRegisterModal()">
+            <i class="fa-solid fa-ticket"></i>
+            <span>Register Now</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER WITH PROVIDED BANNER ASSET (Required) -->
+  <footer class="site-footer" id="contact">
+    <!-- Provided Footer Image Banner Container -->
+    <div class="footer-banner-wrapper">
+      <div class="container">
+        <div class="footer-image-frame">
+          <img src="assets/images/footer.jpg" 
+               alt="IEEE IAS & RAS MITS Gwalior Footer Banner" 
+               class="provided-footer-img" 
+               onerror="this.src='https://plain-apac-prod-public.komododecks.com/202609/17/MrRh7jqDYuucqnLeiKzM/image.jpg'" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Supplementary Footer Content -->
+    <div class="footer-bottom-content">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1: About Organization -->
+          <div class="footer-col">
+            <div class="footer-brand">
+              <span class="footer-brand-title">IEEE InnovateX 2026</span>
+              <p class="footer-desc">
+                Jointly organized by IEEE Industry Applications Society (IAS) & IEEE Robotics and Automation Society (RAS) Student Branch Chapters at Madhav Institute of Technology & Science (MITS), Gwalior.
+              </p>
+            </div>
+            <div class="footer-badges">
+              <span class="chapter-pill">IEEE IAS SBC</span>
+              <span class="chapter-pill">IEEE RAS SBC</span>
+              <span class="chapter-pill">MITS Gwalior</span>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#hero"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+              <li><a href="#about"><i class="fa-solid fa-angle-right"></i> About Societies</a></li>
+              <li><a href="#schedule"><i class="fa-solid fa-angle-right"></i> Event Schedule</a></li>
+              <li><a href="#speakers"><i class="fa-solid fa-angle-right"></i> Keynote Speakers</a></li>
+              <li><a href="#highlights"><i class="fa-solid fa-angle-right"></i> Highlights</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Contact & Venue -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Contact & Venue</h4>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Madhav Institute of Technology & Science, Race Course Road, Gola ka Mandir, Gwalior, MP – 474005</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>ieee.ias.ras@mitsgwalior.in</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>IEEE IAS × RAS Recruitment Desk 2026-27</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-divider"></div>
+
+        <div class="footer-copyright-bar">
+          <p>© 2026 IEEE IAS & RAS MITS Gwalior Student Branch Chapters. All Rights Reserved.</p>
+          <div class="official-links">
+            <a href="https://www.ieee.org" target="_blank" rel="noopener">IEEE.org</a>
+            <span>•</span>
+            <a href="https://ias.ieee.org" target="_blank" rel="noopener">IEEE IAS</a>
+            <span>•</span>
+            <a href="https://www.ieee-ras.org" target="_blank" rel="noopener">IEEE RAS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE REGISTRATION MODAL -->
+  <div class="modal-backdrop" id="registerModal" aria-hidden="true">
+    <div class="modal-dialog glass-panel" role="dialog" aria-labelledby="modalTitle">
+      <button class="modal-close" onclick="closeRegisterModal()" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div id="modalFormContainer">
+        <div class="modal-header">
+          <div class="modal-icon-badge">
+            <i class="fa-solid fa-id-card"></i>
+          </div>
+          <h3 id="modalTitle">Register for InnovateX 2026</h3>
+          <p>Fill out the details below to claim your seat and official symposium badge.</p>
+        </div>
+
+        <form id="registrationForm" onsubmit="handleRegistration(event)" novalidate>
+          <div class="form-group">
+            <label for="fullName">Full Name <span class="required">*</span></label>
+            <div class="input-wrap">
+              <i class="fa-regular fa-user"></i>
+              <input type="text" id="fullName" placeholder="e.g. Aditi Sharma" required />
+            </div>
+            <span class="field-error" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <div class="input-wrap">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" id="email" placeholder="e.g. aditi@mitsgwalior.in" required />
+            </div>
+            <span class="field-error" id="emailError"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="college">College / Institute <span class="required">*</span></label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-building-columns"></i>
+                <input type="text" id="college" placeholder="MITS Gwalior" required />
+              </div>
+              <span class="field-error" id="collegeError"></span>
+            </div>
+            <div class="form-group">
+              <label for="department">Department / Branch <span class="required">*</span></label>
+              <div class="input-wrap">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <input type="text" id="department" placeholder="CSE / ECE / EE" required />
+              </div>
+              <span class="field-error" id="deptError"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="track">Preferred Track <span class="required">*</span></label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-layer-group"></i>
+              <select id="track" required>
+                <option value="both">Both Keynotes + RoboCode IoT Sprint (Full Pass)</option>
+                <option value="robotics">Keynote 1: Autonomous Robotics Track (RAS)</option>
+                <option value="automation">Keynote 2: Sustainable Power & Automation (IAS)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="ieeeId">IEEE Member Number (Optional)</label>
+            <div class="input-wrap">
+              <i class="fa-regular fa-id-badge"></i>
+              <input type="text" id="ieeeId" placeholder="e.g. 98765432" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100 btn-submit" id="submitRegBtn">
+            <span>Confirm Registration</span>
+            <i class="fa-solid fa-circle-check"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Registration Success Confirmation Card (Hidden by default) -->
+      <div id="modalSuccessContainer" style="display: none;">
+        <div class="success-card">
+          <div class="success-icon">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h3>Registration Confirmed!</h3>
+          <p class="success-msg">
+            Welcome aboard! Your registration pass for <strong>IEEE InnovateX 2026</strong> has been registered successfully.
+          </p>
+
+          <!-- Generated Digital Pass Badge -->
+          <div class="digital-ticket">
+            <div class="ticket-header">
+              <span class="ticket-brand">IEEE InnovateX '26</span>
+              <span class="ticket-tag">OFFICIAL PASS</span>
+            </div>
+            <div class="ticket-body">
+              <div class="ticket-field">
+                <span class="lbl">Attendee</span>
+                <span class="val" id="ticketName">-</span>
+              </div>
+              <div class="ticket-field">
+                <span class="lbl">Pass ID</span>
+                <span class="val font-mono" id="ticketId">INX-2026-0000</span>
+              </div>
+              <div class="ticket-field">
+                <span class="lbl">College</span>
+                <span class="val" id="ticketCollege">-</span>
+              </div>
+              <div class="ticket-field">
+                <span class="lbl">Track</span>
+                <span class="val" id="ticketTrack">-</span>
+              </div>
+            </div>
+            <div class="ticket-footer">
+              <div class="ticket-qr-sim">
+                <i class="fa-solid fa-qrcode"></i>
+                <span>PASS VERIFIED</span>
+              </div>
+              <span class="ticket-loc">MITS Gwalior • Oct 24-25</span>
+            </div>
+          </div>
+
+          <div class="success-actions">
+            <button class="btn btn-secondary w-100" onclick="resetRegisterModal()">
+              <i class="fa-solid fa-user-plus"></i> Register Another Attendee
+            </button>
+            <button class="btn btn-primary w-100" onclick="closeRegisterModal()">
+              Done
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
